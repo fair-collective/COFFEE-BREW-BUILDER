@@ -1,0 +1,8 @@
+# Build
+tauri build
+
+# Release
+gh release create v1.0 \
+  "src-tauri/target/release/bundle/**/*" \
+  --title "v1.0 — Coffee Brew Builder" \
+  --notes "The coolest free AI web builder. Brew your site in 10 minutes."
