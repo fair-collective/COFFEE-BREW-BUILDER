@@ -1,0 +1,18 @@
+# 1. Create new repo
+gh repo create fair-collective/coffee-brew-builder --public
+
+# 2. Clone & add all files above
+git clone https://github.com/fair-collective/coffee-brew-builder.git
+cd coffee-brew-builder
+# → Paste all files
+
+# 3. Commit
+git add .
+git commit -m "feat: Coffee Brew Builder v1.0 — The Coolest AI Web Builder"
+
+# 4. Push
+git push
+
+# 5. Build & release
+tauri build
+gh release create v1.0 "src-tauri/target/release/bundle/**/*"
