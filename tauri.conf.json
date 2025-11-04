@@ -1,0 +1,34 @@
+
+---
+
+### `tauri.conf.json` (Updated Product Name)
+
+```json
+{
+  "package": {
+    "productName": "Coffee Brew Builder",
+    "version": "1.0.0"
+  },
+  "tauri": {
+    "allowlist": { "all": true },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "com.faircollective.coffeebrew",
+      "icon": [
+        "icons/coffee-32x32.png",
+        "icons/coffee-128x128.png",
+        "icons/coffee-128x128@2x.png",
+        "icons/coffee.icns",
+        "icons/coffee.ico"
+      ]
+    },
+    "windows": [
+      {
+        "title": "Coffee Brew Builder",
+        "width": 1300,
+        "height": 800
+      }
+    ]
+  }
+}
